@@ -1,0 +1,46 @@
+/* Estilos base de Vite sobrescritos para AVANTE */
+
+/* Mantener solo las optimizaciones útiles */
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Resetear completamente body */
+body {
+  margin: 0 !important;
+  display: block !important;
+  place-items: unset !important;
+  min-width: 320px !important;
+  min-height: 100vh !important;
+}
+
+/* Resetear #root */
+#root {
+  width: 100% !important;
+  min-height: 100vh !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Eliminar estilos de texto por defecto */
+h1 {
+  font-size: unset !important;
+  line-height: unset !important;
+}
+
+/* Eliminar estilos de botón por defecto */
+button {
+  all: unset;
+}
+
+/* Resetear estilos de tema oscuro/claro */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: unset;
+    background-color: unset;
+  }
+}

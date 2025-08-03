@@ -1,0 +1,23 @@
+/* Estilos del Layout */
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout__main {
+  flex: 1;
+  padding-top: 0; /* El header es fixed, por lo que no necesita padding-top extra */
+}
+
+/* Espaciado para evitar que el contenido quede detrás del header fijo */
+.layout__main > *:first-child {
+  margin-top: 0;
+}
+
+/* Asegurar que las secciones tengan el espaciado correcto */
+@media (min-width: 768px) {
+  .layout__main {
+    padding-top: 0;
+  }
+}
