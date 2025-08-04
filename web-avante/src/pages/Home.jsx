@@ -1,32 +1,29 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Layout from '../components/Layout';
 import './Home.css';
 
 const Home = () => {
   return (
-    <>
-      <Header />
-      <main className="home">
+    <Layout>
       {/* Hero Section */}
       <section id="inicio" className="hero">
         <div className="hero__content">
           <div className="container">
             <div className="hero__text">
               <h1 className="hero__title">
-                Tu Salud, Nuestra 
-                <span className="hero__highlight"> Prioridad</span>
+                Centro Médico Especializado 
+                <span className="hero__highlight"> AVANTE</span>
               </h1>
               <p className="hero__description">
-                En el Complejo Hospitalario AVANTE, brindamos atención médica integral 
-                con tecnología de vanguardia y un equipo humano altamente calificado. 
-                Tu bienestar es nuestro compromiso.
+                Nace como una nueva opción en el sector salud para ofertar servicios 
+                quirúrgicos y de hospitalización, con alta calidad en el servicio a 
+                precios accesibles y razonables para nuestros clientes y aliados estratégicos.
               </p>
               <div className="hero__actions">
-                <a href="#citas" className="btn btn-primary btn--large">
+                <a href="/contacto" className="btn btn-primary btn--large">
                   Reservar Cita
                 </a>
-                <a href="#servicios" className="btn btn-secondary btn--large">
+                <a href="/servicios" className="btn btn-secondary btn--large">
                   Ver Servicios
                 </a>
               </div>
@@ -43,50 +40,50 @@ const Home = () => {
         <div className="container">
           <div className="section-title">
             <h2>Nuestros Servicios</h2>
-            <p>Ofrecemos una amplia gama de servicios médicos especializados</p>
+            <p>Servicios diseñados para promover y restablecer la salud, con base en criterios de alta calidad</p>
           </div>
           
           <div className="services__grid grid grid-3">
             <div className="service-card card">
               <div className="service-card__icon">🏥</div>
-              <h3>Emergencias 24/7</h3>
-              <p>Atención médica de urgencia las 24 horas del día, todos los días del año.</p>
-              <a href="#emergencias" className="service-card__link">Más información</a>
+              <h3>Servicios Quirúrgicos</h3>
+              <p>Cirugías especializadas con equipos de última generación y profesionales altamente calificados.</p>
+              <a href="/servicios" className="service-card__link">Más información</a>
+            </div>
+            
+            <div className="service-card card">
+              <div className="service-card__icon">�️</div>
+              <h3>Hospitalización</h3>
+              <p>Servicios de hospitalización con atención humanizada y tecnología médica avanzada.</p>
+              <a href="/servicios" className="service-card__link">Más información</a>
             </div>
             
             <div className="service-card card">
               <div className="service-card__icon">🔬</div>
-              <h3>Laboratorio Clínico</h3>
-              <p>Análisis clínicos completos con tecnología de última generación.</p>
-              <a href="#laboratorio" className="service-card__link">Más información</a>
+              <h3>Diagnóstico Médico</h3>
+              <p>Servicios de diagnóstico con equipos tecnológicos de última generación para resultados precisos.</p>
+              <a href="/servicios" className="service-card__link">Más información</a>
             </div>
             
             <div className="service-card card">
-              <div className="service-card__icon">🩻</div>
-              <h3>Diagnóstico por Imágenes</h3>
-              <p>Radiografías, tomografías, resonancias magnéticas y ecografías.</p>
-              <a href="#imagenes" className="service-card__link">Más información</a>
+              <div className="service-card__icon">⚡</div>
+              <h3>Atención de Emergencia</h3>
+              <p>Servicios de emergencia con agilidad en los procesos y atención médica inmediata.</p>
+              <a href="/contacto" className="service-card__link">Más información</a>
             </div>
             
             <div className="service-card card">
-              <div className="service-card__icon">🏃‍♂️</div>
-              <h3>Medicina Deportiva</h3>
-              <p>Especialistas en lesiones deportivas y rehabilitación física.</p>
-              <a href="#deportiva" className="service-card__link">Más información</a>
+              <div className="service-card__icon">👨‍⚕️</div>
+              <h3>Consulta Especializada</h3>
+              <p>Equipo interdisciplinario de profesionales concentrados en su salud y bienestar.</p>
+              <a href="/servicios" className="service-card__link">Más información</a>
             </div>
             
             <div className="service-card card">
-              <div className="service-card__icon">🧠</div>
-              <h3>Neurología</h3>
-              <p>Diagnóstico y tratamiento de enfermedades del sistema nervioso.</p>
-              <a href="#neurologia" className="service-card__link">Más información</a>
-            </div>
-            
-            <div className="service-card card">
-              <div className="service-card__icon">❤️</div>
-              <h3>Cardiología</h3>
-              <p>Cuidado integral del corazón y sistema cardiovascular.</p>
-              <a href="#cardiologia" className="service-card__link">Más información</a>
+              <div className="service-card__icon">🏆</div>
+              <h3>Atención de Calidad</h3>
+              <p>Garantizamos la excelencia en la prestación del servicio con criterios de alta calidad.</p>
+              <a href="/nosotros" className="service-card__link">Más información</a>
             </div>
           </div>
         </div>
@@ -156,64 +153,64 @@ const Home = () => {
       <section className="why-us section">
         <div className="container">
           <div className="section-title">
-            <h2>¿Por qué elegir AVANTE?</h2>
-            <p>Somos el mejor complejo hospitalario de la región</p>
+            <h2>¿Por qué escogernos?</h2>
+            <p>Contamos con un equipo interdisciplinario de profesionales concentrados en su salud</p>
           </div>
           
           <div className="why-us__grid grid grid-2">
             <div className="why-us__content">
               <div className="feature">
-                <div className="feature__icon">⚡</div>
+                <div className="feature__icon">🏥</div>
                 <div className="feature__content">
-                  <h4>Atención Rápida</h4>
-                  <p>Sistema de triaje eficiente para minimizar tiempos de espera.</p>
+                  <h4>Alta Calidad en el Servicio</h4>
+                  <p>Comprometidos en brindar servicios diseñados para promover y restablecer la salud con criterios de alta calidad.</p>
                 </div>
               </div>
               
               <div className="feature">
-                <div className="feature__icon">👨‍⚕️</div>
+                <div className="feature__icon">❤️</div>
                 <div className="feature__content">
-                  <h4>Médicos Especialistas</h4>
-                  <p>Equipo médico con certificaciones internacionales.</p>
+                  <h4>Atención Humanizada</h4>
+                  <p>Una concepción de atención humanizada, basados en principios de empatía, responsabilidad y honestidad.</p>
                 </div>
               </div>
               
               <div className="feature">
                 <div className="feature__icon">🔬</div>
                 <div className="feature__content">
-                  <h4>Tecnología Avanzada</h4>
-                  <p>Equipos médicos de última generación para diagnósticos precisos.</p>
+                  <h4>Tecnología de Última Generación</h4>
+                  <p>Equipo tecnológico de última generación para diagnósticos precisos y tratamientos efectivos.</p>
                 </div>
               </div>
               
               <div className="feature">
-                <div className="feature__icon">🏆</div>
+                <div className="feature__icon">⚡</div>
                 <div className="feature__content">
-                  <h4>Acreditación Internacional</h4>
-                  <p>Certificados por organizaciones médicas de prestigio mundial.</p>
+                  <h4>Agilidad en los Procesos</h4>
+                  <p>Eficiencia y seguridad del paciente con procesos ágiles y trabajo en equipo profesional.</p>
                 </div>
               </div>
             </div>
             
             <div className="why-us__stats">
               <div className="stat-card">
-                <div className="stat-card__number">15+</div>
-                <div className="stat-card__label">Años de Experiencia</div>
+                <div className="stat-card__number">Calidad</div>
+                <div className="stat-card__label">Alta Calidad en Servicios</div>
               </div>
               
               <div className="stat-card">
-                <div className="stat-card__number">50+</div>
-                <div className="stat-card__label">Médicos Especialistas</div>
+                <div className="stat-card__number">Equipo</div>
+                <div className="stat-card__label">Profesionales Especializados</div>
               </div>
               
               <div className="stat-card">
-                <div className="stat-card__number">10K+</div>
-                <div className="stat-card__label">Pacientes Atendidos</div>
+                <div className="stat-card__number">Tecnología</div>
+                <div className="stat-card__label">Equipos de Última Generación</div>
               </div>
               
               <div className="stat-card">
-                <div className="stat-card__number">24/7</div>
-                <div className="stat-card__label">Emergencias</div>
+                <div className="stat-card__number">Humanizado</div>
+                <div className="stat-card__label">Atención con Calidez</div>
               </div>
             </div>
           </div>
@@ -225,23 +222,21 @@ const Home = () => {
         <div className="container">
           <div className="quick-contact__content">
             <div className="quick-contact__text">
-              <h2>¿Necesitas una cita médica?</h2>
-              <p>Reserva tu cita de manera rápida y sencilla. Nuestro equipo te atenderá con la mejor calidad.</p>
+              <h2>¿Necesitas atención médica?</h2>
+              <p>Contáctanos para agendar tu cita. Garantizamos la excelencia en la prestación del servicio, satisfaciendo todas sus necesidades en salud.</p>
             </div>
             <div className="quick-contact__actions">
-              <a href="tel:+51999888777" className="btn btn-secondary btn--large">
-                📞 Llamar Ahora
+              <a href="tel:+50322382300" className="btn btn-secondary btn--large">
+                📞 (503) 2238-2300
               </a>
-              <a href="#citas" className="btn btn--outline btn--large">
-                📅 Reservar Online
+              <a href="/contacto" className="btn btn--outline btn--large">
+                📅 Contactar
               </a>
             </div>
           </div>
         </div>
       </section>
-    </main>
-    <Footer />
-    </>
+    </Layout>
   );
 };
 

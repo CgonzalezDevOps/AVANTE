@@ -10,17 +10,18 @@ const Footer = () => {
             <div className="footer__logo">
               <h3 className="logo">
                 <span className="logo__text">AVANTE</span>
-                <span className="logo__subtitle">Complejo Hospitalario</span>
+                <span className="logo__subtitle">Centro Médico Especializado</span>
               </h3>
             </div>
             <p className="footer__description">
-              Brindamos atención médica de calidad con tecnología de vanguardia 
-              y un equipo humano comprometido con tu bienestar y el de tu familia.
+              Centro médico especializado que ofrece servicios quirúrgicos y de 
+              hospitalización con alta calidad en el servicio a precios accesibles 
+              y razonables, con atención humanizada y tecnología de última generación.
             </p>
             <div className="footer__emergency">
-              <h4>Emergencias 24/7</h4>
-              <a href="tel:+51999888777" className="emergency-phone">
-                📞 +51 999 888 777
+              <h4>Contacto Principal</h4>
+              <a href="tel:+50322382300" className="emergency-phone">
+                📞 (503) 2238-2300
               </a>
             </div>
           </div>
@@ -29,23 +30,23 @@ const Footer = () => {
           <div className="footer__section">
             <h4 className="footer__title">Enlaces Rápidos</h4>
             <ul className="footer__links">
-              <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#servicios">Servicios</a></li>
-              <li><a href="#especialidades">Especialidades</a></li>
-              <li><a href="#medicos">Nuestros Médicos</a></li>
-              <li><a href="#citas">Reservar Cita</a></li>
+              <li><a href="/">Inicio</a></li>
+              <li><a href="/nosotros">Nosotros</a></li>
+              <li><a href="/servicios">Nuestros Servicios</a></li>
+              <li><a href="/novedades">Novedades</a></li>
+              <li><a href="/contacto">Contáctanos</a></li>
             </ul>
           </div>
 
           {/* Servicios */}
           <div className="footer__section">
-            <h4 className="footer__title">Servicios</h4>
+            <h4 className="footer__title">Nuestros Servicios</h4>
             <ul className="footer__links">
-              <li><a href="#cardiologia">Cardiología</a></li>
-              <li><a href="#pediatria">Pediatría</a></li>
-              <li><a href="#neurologia">Neurología</a></li>
-              <li><a href="#ginecologia">Ginecología</a></li>
-              <li><a href="#emergencias">Emergencias</a></li>
+              <li><a href="/servicios">Servicios Quirúrgicos</a></li>
+              <li><a href="/servicios">Hospitalización</a></li>
+              <li><a href="/servicios">Diagnóstico Médico</a></li>
+              <li><a href="/servicios">Consulta Especializada</a></li>
+              <li><a href="/contacto">Atención de Emergencia</a></li>
             </ul>
           </div>
 
@@ -56,17 +57,18 @@ const Footer = () => {
               <div className="contact__item">
                 <span className="contact__icon">📍</span>
                 <div>
-                  <p>Av. Principal 123</p>
-                  <p>Lima, Perú</p>
+                  <p>1ra. Calle Poniente #3488</p>
+                  <p>Entre 73 y 75 Av. Norte</p>
+                  <p>San Salvador, El Salvador</p>
                 </div>
               </div>
               <div className="contact__item">
                 <span className="contact__icon">📧</span>
-                <a href="mailto:info@avante.pe">info@avante.pe</a>
+                <a href="mailto:administracion@centromedicosv.com">administracion@centromedicosv.com</a>
               </div>
               <div className="contact__item">
                 <span className="contact__icon">📞</span>
-                <a href="tel:+51123456789">+51 123 456 789</a>
+                <a href="tel:+50322382300">(503) 2238-2300</a>
               </div>
             </div>
 
@@ -74,10 +76,15 @@ const Footer = () => {
             <div className="footer__social">
               <h4>Síguenos</h4>
               <div className="social__links">
-                <a href="#" aria-label="Facebook">📘</a>
-                <a href="#" aria-label="Instagram">📷</a>
-                <a href="#" aria-label="Twitter">🐦</a>
-                <a href="#" aria-label="LinkedIn">💼</a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <span className="icon-facebook"></span>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                  <span className="icon-twitter"></span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <span className="icon-linkedin"></span>
+                </a>
               </div>
             </div>
           </div>
@@ -88,16 +95,16 @@ const Footer = () => {
           <h4>Horarios de Atención</h4>
           <div className="schedule__grid">
             <div className="schedule__item">
-              <span>Consultas Generales:</span>
-              <span>Lun - Vie: 7:00 AM - 7:00 PM</span>
+              <span>Servicios Quirúrgicos:</span>
+              <span>Previa cita médica</span>
             </div>
             <div className="schedule__item">
-              <span>Sábados:</span>
-              <span>8:00 AM - 2:00 PM</span>
+              <span>Consulta Especializada:</span>
+              <span>Lun - Vie: 8:00 AM - 5:00 PM</span>
             </div>
             <div className="schedule__item">
-              <span>Emergencias:</span>
-              <span>24 horas, todos los días</span>
+              <span>Información General:</span>
+              <span>(503) 2238-2300</span>
             </div>
           </div>
         </div>
@@ -105,12 +112,12 @@ const Footer = () => {
         {/* Copyright */}
         <div className="footer__bottom">
           <div className="footer__copyright">
-            <p>&copy; 2025 Complejo Hospitalario AVANTE. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Centro Médico Especializado AVANTE. Todos los derechos reservados.</p>
           </div>
           <div className="footer__legal">
-            <a href="#privacidad">Política de Privacidad</a>
-            <a href="#terminos">Términos de Uso</a>
-            <a href="#cookies">Política de Cookies</a>
+            <a href="/contacto">Política de Privacidad</a>
+            <a href="/contacto">Términos de Uso</a>
+            <a href="/contacto">Información Legal</a>
           </div>
         </div>
       </div>
