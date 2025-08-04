@@ -4,7 +4,13 @@
   "version": "1.0.0",
   "type": "module",
   "author": "Complejo Hospitalario AVANTE",
-  "keywords": ["hospital", "medicina", "salud", "emergencias", "especialidades médicas"],
+  "keywords": [
+    "hospital",
+    "medicina",
+    "salud",
+    "emergencias",
+    "especialidades médicas"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,7 +19,8 @@
   },
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.7.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
